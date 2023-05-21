@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_patient">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="352dp"
+        android:layout_height="75dp"
+        android:gravity="center"
+        android:text="تسجيل الدخول"
+        android:textColor="@color/blue"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.172" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="274dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="center"
+        android:text="يرجى التسجيل للمتابعة"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <EditText
+        android:id="@+id/emailLoginP"
+        android:layout_width="347dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/textfield"
+        android:drawableStart="@drawable/email"
+        android:ems="10"
+        android:hint="البريد الالكتروني:"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <EditText
+        android:id="@+id/passLoginP"
+        android:layout_width="347dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/textfield"
+        android:drawableStart="@drawable/lock"
+        android:ems="10"
+        android:gravity="right"
+        android:hint="كلمة المرور"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailLoginP" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="283dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="204dp"
+        android:backgroundTint="@color/blue"
+        android:text="تسجيل!"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/donthaveAccount"
+        android:layout_width="233dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="128dp"
+        android:gravity="center"
+        android:text="ليس لديك حساب !"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

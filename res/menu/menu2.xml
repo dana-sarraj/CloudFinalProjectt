@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/chat"
+        app:showAsAction="always"
+        android:iconTint="@color/white"
+        android:icon="@drawable/chat" android:title="المراسلة " />
+
+    <item android:id="@+id/add_topic"
+        app:showAsAction="never"
+        android:icon="@drawable/add" android:title="اضافة استشارة" />
+
+    <item android:id="@+id/profile"
+        app:showAsAction="never"
+        android:icon="@drawable/person" android:title="الصفحة الشخصية" />
+
+    <item android:id="@+id/logout"
+        app:showAsAction="never"
+        android:icon="@drawable/logout" android:title="الخروج" />
+
+</menu>
